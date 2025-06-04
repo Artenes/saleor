@@ -1,0 +1,131 @@
+Test Case ID,Scenario,Feature ID,Feature Name
+TC001,Successful login,F01,Authentication
+TC002,Login with invalid credentials,F01,Authentication
+TC003,Logout,F01,Authentication
+TC004,Request password reset,F01,Authentication
+TC005,Reset password with token,F01,Authentication
+TC006,Login with empty credentials,F01,Authentication
+TC007,Login after multiple failed attempts,F01,Authentication
+TC008,Reset password with expired token,F01,Authentication
+TC009,Login when account is disabled,F01,Authentication
+TC010,Session timeout after inactivity,F01,Authentication
+TC011,View product list,F02,Product Browsing and Search
+TC012,Filter products by category,F02,Product Browsing and Search
+TC013,Search products,F02,Product Browsing and Search
+TC014,View product details,F02,Product Browsing and Search
+TC015,Pagination of product list,F02,Product Browsing and Search
+TC016,Search with unsupported characters,F02,Product Browsing and Search
+TC017,Filter by non-existent category,F02,Product Browsing and Search
+TC018,Pagination beyond last page,F02,Product Browsing and Search
+TC019,Pagination with page zero,F02,Product Browsing and Search
+TC020,Search with blank keyword,F02,Product Browsing and Search
+TC021,Add product to cart,F03,Cart and Checkout
+TC022,Update quantity in cart,F03,Cart and Checkout
+TC023,Remove product from cart,F03,Cart and Checkout
+TC024,Begin checkout,F03,Cart and Checkout
+TC025,Complete checkout with valid payment,F03,Cart and Checkout
+TC026,Checkout with invalid payment,F03,Cart and Checkout
+TC027,Add product with zero quantity,F03,Cart and Checkout
+TC028,Update cart quantity beyond available stock,F03,Cart and Checkout
+TC029,Remove product from empty cart,F03,Cart and Checkout
+TC030,Begin checkout with empty cart,F03,Cart and Checkout
+TC031,Checkout with expired payment method,F03,Cart and Checkout
+TC032,Session expires during checkout,F03,Cart and Checkout
+TC033,View past orders,F04,Order Management
+TC034,View order details,F04,Order Management
+TC035,Cancel order before fulfillment,F04,Order Management
+TC036,Attempt to cancel fulfilled order,F04,Order Management
+TC037,View order details for another user,F04,Order Management
+TC038,Return items from delivered order,F04,Order Management
+TC039,Refund order after cancellation,F04,Order Management
+TC040,Order history pagination boundary,F04,Order Management
+TC041,View profile,F05,User Profile Management
+TC042,Update profile information,F05,User Profile Management
+TC043,Change password,F05,User Profile Management
+TC044,Delete account,F05,User Profile Management
+TC045,View profile while not logged in,F05,User Profile Management
+TC046,Update profile with invalid email,F05,User Profile Management
+TC047,Change password with mismatched confirmation,F05,User Profile Management
+TC048,Delete account with wrong confirmation,F05,User Profile Management
+TC049,Add a new product,F06,Administration Tasks
+TC050,Edit existing product,F06,Administration Tasks
+TC051,Delete a product,F06,Administration Tasks
+TC052,Update stock levels,F06,Administration Tasks
+TC053,Review orders,F06,Administration Tasks
+TC054,Add product with missing required fields,F06,Administration Tasks
+TC055,Edit product with invalid price,F06,Administration Tasks
+TC056,Delete product that is part of an active order,F06,Administration Tasks
+TC057,Update stock with negative quantity,F06,Administration Tasks
+TC058,Unauthorized user attempts admin access,F06,Administration Tasks
+TC059,Unauthorized access,F07,Error Handling and Feedback
+TC060,Invalid data submission,F07,Error Handling and Feedback
+TC061,Server error,F07,Error Handling and Feedback
+TC062,Accessing an invalid API endpoint,F07,Error Handling and Feedback
+TC063,Exceeding rate limit,F07,Error Handling and Feedback
+TC064,Concurrent modification conflict,F07,Error Handling and Feedback
+TC065,Apply valid discount code,F08,Discounts and Voucher Codes
+TC066,Apply invalid or expired discount code,F08,Discounts and Voucher Codes
+TC067,Remove applied discount code,F08,Discounts and Voucher Codes
+TC068,Apply discount exceeding order total,F08,Discounts and Voucher Codes
+TC069,Purchase a gift card,F09,Gift Card Management
+TC070,Redeem gift card at checkout,F09,Gift Card Management
+TC071,Redeem expired or used gift card,F09,Gift Card Management
+TC072,Check remaining gift card balance,F09,Gift Card Management
+TC073,Select shipping method during checkout,F10,Shipping and Delivery
+TC074,Enter shipping address from unsupported country,F10,Shipping and Delivery
+TC075,Update shipping address after order placed,F10,Shipping and Delivery
+TC076,Track shipment status,F10,Shipping and Delivery
+TC077,Pay with valid credit card,F11,Payment Processing
+TC078,Payment fails due to insufficient funds,F11,Payment Processing
+TC079,Cancel payment during processing,F11,Payment Processing
+TC080,Request refund for paid order,F11,Payment Processing
+TC081,Purchase digital product,F12,Digital Product Downloads
+TC082,Download link expires,F12,Digital Product Downloads
+TC083,Access download after logging in,F12,Digital Product Downloads
+TC084,Attempt download without purchase,F12,Digital Product Downloads
+TC085,Login attempt with SQL injection,F01,Authentication
+TC086,Login requiring two-factor authentication,F01,Authentication
+TC087,Change password with weak password,F01,Authentication
+TC088,Log out from all devices,F01,Authentication
+TC089,Password reset request rate limit,F01,Authentication
+TC090,Sort products by price ascending,F02,Product Browsing and Search
+TC091,Sort products by rating,F02,Product Browsing and Search
+TC092,View out-of-stock product details,F02,Product Browsing and Search
+TC093,Search product by SKU,F02,Product Browsing and Search
+TC094,Filter by price range boundary,F02,Product Browsing and Search
+TC095,Add same product multiple times,F03,Cart and Checkout
+TC096,Guest checkout without creating account,F03,Cart and Checkout
+TC097,Partial checkout due to stock issue,F03,Cart and Checkout
+TC098,Edit cart after selecting shipping method,F03,Cart and Checkout
+TC099,Save cart for later,F03,Cart and Checkout
+TC100,Change shipping method before fulfillment,F04,Order Management
+TC101,Add tracking information to order,F04,Order Management
+TC102,Reorder previous items,F04,Order Management
+TC103,View downloadable invoice,F04,Order Management
+TC104,Enable two-factor authentication,F05,User Profile Management
+TC105,Link a social media account,F05,User Profile Management
+TC106,Upload oversized profile picture,F05,User Profile Management
+TC107,Reactivate account after deletion request,F05,User Profile Management
+TC108,Bulk upload products via CSV,F06,Administration Tasks
+TC109,View audit log of changes,F06,Administration Tasks
+TC110,Assign staff roles,F06,Administration Tasks
+TC111,Mark order as fulfilled,F06,Administration Tasks
+TC112,Generate sales report,F06,Administration Tasks
+TC113,Service unavailable during maintenance,F07,Error Handling and Feedback
+TC114,Malformed JSON request body,F07,Error Handling and Feedback
+TC115,Request exceeds maximum payload size,F07,Error Handling and Feedback
+TC116,Stack multiple discount codes,F08,Discounts and Voucher Codes
+TC117,Apply voucher to ineligible products,F08,Discounts and Voucher Codes
+TC118,Remove discount after checkout started,F08,Discounts and Voucher Codes
+TC119,Partially redeem gift card across multiple orders,F09,Gift Card Management
+TC120,Transfer gift card to another user,F09,Gift Card Management
+TC121,Redeem gift card with invalid characters,F09,Gift Card Management
+TC122,Calculate shipping for oversized item,F10,Shipping and Delivery
+TC123,Prevent shipping to PO box,F10,Shipping and Delivery
+TC124,Notify user when shipment is delayed,F10,Shipping and Delivery
+TC125,Pay using PayPal,F11,Payment Processing
+TC126,Partially capture a pre-authorized payment,F11,Payment Processing
+TC127,Retry payment with a different card,F11,Payment Processing
+TC128,Download limit reached,F12,Digital Product Downloads
+TC129,Verify checksum of downloaded file,F12,Digital Product Downloads
+TC130,Pause and resume large download,F12,Digital Product Downloads
